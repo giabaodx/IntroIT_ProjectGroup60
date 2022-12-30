@@ -42,6 +42,12 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 </div>
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Team_profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="Description.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
+  <a href="web_development.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROTOTYPE</a>
+</div>
 <br>
 <br>
 <br>
@@ -108,7 +114,7 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside the modal, close it
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target === modal) {

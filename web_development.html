@@ -43,6 +43,13 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-yellow w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Team_profile.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TEAM</a>
+  <a href="Description.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECT</a>
+  <a href="web_development.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROTOTYPE</a>
+</div>
+
 <!--Web development-->
 <div class="w3-row w3-content w3-padding-100" style="max-width:1200px">
       <br>
@@ -88,5 +95,15 @@ body {font-family: "Lato", sans-serif}
   <p class="w3-medium w3-opacity"><i>LE XUAN LOC - DO XUAN GIA BAO - TRINH XUAN KHANH - NGUYEN TU QUOC THAI - NGUYEN TUNG BAO THACH</i></p>
   <h1 class="w3-opacity"><i>APP MALL TEAM</i></h1>
 </footer>
+    <script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") === -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    </script>
 </body>
 </html>
